@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    margin: 0;
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.right {
+    margin: 0;
+    width: 70vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    width: 100%;
+    height: 35vh;
+    background-color: rgb(240, 240, 240);
+}
+
+.mid {
+    width: 100%;
+    height: 30vh;
+}
+
+.bot {
+    width: 100%;
+    height: 35vh;
+    background-color: rgb(240, 240, 240);
+}
