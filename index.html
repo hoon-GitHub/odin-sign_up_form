@@ -12,13 +12,54 @@
             <div><img src="odin-lined.png"><h1>ODIN</h1></div>
         </div>
         <div class="botL">
-            <p>Photo by Halie West on <a href="https://unsplash.com">Unsplash</a></p>
+            <p>Photo by Leo_Visions on <a href="https://unsplash.com">Unsplash</a></p>
         </div>
     </div>
+
     <div class="right">
-        <div class="top"></div>
-        <div class="mid"></div>
-        <div class="bot"></div>
+        <div class="top">
+            <p>This is not a real online service! You know you need something like this 
+                in your life to help you realize your deepest dreams.
+                <br>Sign up <em>now</em> to get started.
+                <br><br>You <em>know</em> you want to.
+            </p>
+        </div>
+        
+        <form action="" method="GET">
+            <div class="mid">
+                <h3>Let's do this!</h3>
+                <div class="form">
+                    <div class="field">
+                        <label for="first_name">FIRST NAME</label>
+                        <input type="text" id="first_name" placeholder="First Name" required>
+                    </div>
+                    <div class="field">
+                        <label for="last_name">LAST NAME</label>
+                        <input type="text" id="last_name" placeholder="Last Name" required>
+                    </div>
+                    <div class="field">
+                        <label for="email_address">EMAIL</label>
+                        <input type="email" id="email_address">
+                    </div>
+                    <div class="field">
+                        <label for="phone_number">PHONE NUMBER</label>
+                        <input type="tel" id="phone_number">
+                    </div>
+                    <div class="field">
+                        <label for="password1">PASSWORD</label>
+                        <input type="password" id="password1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                    </div>
+                    <div class="field">
+                        <label for="password2">CONFIRM PASSWORD</label>
+                        <input type="password" id="password2" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                    </div>
+                </div>
+            </div>
+            <div class="bot">
+                <button type="submit" class="btn_submit">Create Account</button>
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
+        </form>
     </div>
 </body>
 </html>
