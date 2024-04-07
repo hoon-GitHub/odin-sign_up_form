@@ -24,7 +24,7 @@
                 <br><br>You <em>know</em> you want to.
             </p>
         </div>
-        
+
         <form action="" method="GET">
             <div class="mid">
                 <h3>Let's do this!</h3>
@@ -39,19 +39,23 @@
                     </div>
                     <div class="field">
                         <label for="email_address">EMAIL</label>
-                        <input type="email" id="email_address">
+                        <input type="email" id="email_address" required>
+                        <div class="error err_email">example@example.com is required</div>
                     </div>
                     <div class="field">
                         <label for="phone_number">PHONE NUMBER</label>
-                        <input type="tel" id="phone_number">
+                        <input type="tel" id="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        <div class="error err_tel">###-###-#### is required</div>
                     </div>
                     <div class="field">
                         <label for="password1">PASSWORD</label>
-                        <input type="password" id="password1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                        <input type="password" id="password1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                        <div class="error err_pass1">one number, one uppercase and 8 or more characters required</div>
                     </div>
                     <div class="field">
                         <label for="password2">CONFIRM PASSWORD</label>
-                        <input type="password" id="password2" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                        <input type="password" id="password2" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                        <div class="error err_pass2">one number, one uppercase and 8 or more characters required</div>
                     </div>
                 </div>
             </div>
@@ -61,5 +65,8 @@
             </div>
         </form>
     </div>
+
+    <!-- Javascript is used only for displaying input validation error messages -->
+    <script src="sign_up.js"></script>
 </body>
 </html>
